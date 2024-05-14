@@ -20,25 +20,40 @@
  * SOFTWARE.
  */
 
-import { build } from "velite";
+import { defineCollection, defineConfig, s } from "velite";
 
-/** @type {import("next").NextConfig} */
-export default {
-  webpack: config => {
-    config.plugins.push(new VeliteWebpackPlugin());
-    return config;
-  }
-};
+const computedFields = <T extends { slug: string }>(data: T) => ({
+  ...data,
+  slugAsParams: data.slug.split("/").slice(1).join("/"),
+});
 
-class VeliteWebpackPlugin {
-  static started = false;
+const post = defineCollection({
+  name: "Post",
+  pattern: "blog/**/*.mdx",
+  schema: s
+    .object({
+      slug: s.path(),
+      title: s.string(),
+      description: s.string(),
+      date: s.isodate(),
+      published: s.boolean().default(false),
+      body: s.mdx(),
+    })
+    .transform(computedFields),
+});
 
-  apply(/** @type {import("webpack").Compiler} */ compiler) {
-    compiler.hooks.beforeCompile.tapPromise("VeliteWebpackPlugin", async () => {
-      if (VeliteWebpackPlugin.started) return;
-      VeliteWebpackPlugin.started = true;
-      const dev = compiler.options.mode === "development";
-      await build({ watch: dev, clean: !dev });
-    });
-  }
-}
+export default defineConfig({
+  root: "content",
+  output: {
+    data: ".velite",
+    assets: "public/static",
+    base: "/static/",
+    name: "[name]-[hash:6].[ext]",
+    clean: true,
+  },
+  collections: { post },
+  mdx: {
+    rehypePlugins: [],
+    remarkPlugins: [],
+  },
+});

@@ -29,7 +29,8 @@
       "@dto/*": ["./src/dto/*"],
       "@enums/*": ["./src/enums/*"],
       "@lib/*": ["./src/lib/*"],
-      "@hooks/*": ["./src/hooks/*"]
+      "@hooks/*": ["./src/hooks/*"],
+      "@blog-content": ["./.velite"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
