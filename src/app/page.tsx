@@ -21,23 +21,23 @@
  */
 
 import Image from "next/image";
-import logo from "../../public/assets/Icon.svg"
+import logo from "@public/assets/Icon.svg";
 
 export default function Home() {
-    return (
-        <div className={"min-h-screen flex"}>
-            <div className="m-auto">
-                <div className="flex flex-col items-center justify-center space-y-5">
-                    <Image
-                        src={logo}
-                        alt="Mihir Paldhikar"
-                        priority={true}
-                        fetchPriority={"high"}
-                        className={"w-24"}
-                    />
-                    <h1 className={"text-2xl font-bold"}>Mihir Paldhikar&apos;s Blog</h1>
-                </div>
-            </div>
+  return (
+    <div className={"min-h-screen flex"}>
+      <div className="m-auto">
+        <div className="flex flex-col items-center justify-center space-y-5">
+          <Image
+            src={logo}
+            alt="Mihir Paldhikar"
+            priority={true}
+            fetchPriority={"high"}
+            className={"w-24"}
+          />
+          <h1 className={"text-2xl font-bold"}>Mihir Paldhikar&apos;s Blog</h1>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
