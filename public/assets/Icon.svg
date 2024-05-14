@@ -1,0 +1,34 @@
+<!--
+  - Copyright (c) Mihir Paldhikar
+  -
+  - Permission is hereby granted, free of charge, to any person obtaining a copy
+  - of this software and associated documentation files (the “Software”), to deal
+  - in the Software without restriction, including without limitation the rights
+  - to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  - copies of the Software, and to permit persons to whom the Software is
+  - furnished to do so, subject to the following conditions:
+  -
+  - The above copyright notice and this permission notice shall be included in all
+  - copies or substantial portions of the Software.
+  -
+  - THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  - IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  - FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  - AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  - LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  - OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  - SOFTWARE.
+  -->
+
+<svg width="270" height="270" viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_16)">
+<path d="M86.2933 210V154H97.0133L120.853 193.52H115.173L138.613 154H149.253L149.413 210H137.253L137.173 172.64H139.413L120.693 204.08H114.853L95.7333 172.64H98.4533V210H86.2933Z" fill="#3B82F6"/>
+<path d="M162.487 210V154H186.727C191.74 154 196.06 154.827 199.687 156.48C203.313 158.08 206.113 160.4 208.087 163.44C210.06 166.48 211.047 170.107 211.047 174.32C211.047 178.48 210.06 182.08 208.087 185.12C206.113 188.16 203.313 190.507 199.687 192.16C196.06 193.76 191.74 194.56 186.727 194.56H169.687L175.447 188.72V210H162.487ZM175.447 190.16L169.687 184H186.007C190.007 184 192.993 183.147 194.967 181.44C196.94 179.733 197.927 177.36 197.927 174.32C197.927 171.227 196.94 168.827 194.967 167.12C192.993 165.413 190.007 164.56 186.007 164.56H169.687L175.447 158.4V190.16Z" fill="#3B82F6"/>
+<rect x="35" y="33" width="195.319" height="203.581" rx="20" stroke="#3B82F6" stroke-width="20"/>
+</g>
+<defs>
+<clipPath id="clip0_1_16">
+<rect width="270" height="270" fill="white"/>
+</clipPath>
+</defs>
+</svg>
